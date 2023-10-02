@@ -5,9 +5,10 @@
   "main": "server.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.jsx",
     "server": "nodemon server.jsx",
     "client": "npm start --prefix ./client",
-    "both": "concurrently \"npm run server\" \"npm run client\""
+    "both": "concurrently \"npm start\" \"npm run client\""
   },
   "author": "deep",
   "license": "ISC",
